@@ -13,13 +13,21 @@
 </head>
 <body style="background-color: #666666">
 <script>
-	var Audio = new Audio('che_faccio.mp3');
-	function playAudio(){
-	Audio.play();
+	var aAudio = new Audio('che_faccio.mp3');
+	var bAudio = new Audio('pt.mp3');
+	function playAudio(type){
+		if (type == 'a') {
+			aAudio.play();
+		}
+		else if (type == 'b'){
+			bAudio.play();
+		}
 	}
 </script>
-<a onclick="playAudio()">
-	<img class="center" height="404" src="bgimage.jpg" width="404" >
-</a>
+<a onclick="playAudio('a')">
+	<img class="center" height="404" src="bgimage.jpg" width="404" style="left: 50%; top: 50%" ></a>
+<a onclick="playAudio('b')">
+	<img class="center" height="20" src="bgimage2.jpg" width="20" style="left: 95%; top: 95%" ></a>
+
 </body>
 </html>
