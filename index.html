@@ -1,8 +1,25 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
     <title>Molto Felice</title>
+	<style type="text/css">
+	.center {
+  		position: fixed;
+  		 top: 50%;
+ 		 left: 50%;
+ 		 transform: translate(-50%, -50%);
+}	
+	</style>
 </head>
-<body background="bgimage.jpg">
+<body style="background-color: #666666">
+<script>
+	var Audio = new Audio('che_faccio.mp3');
+	function playAudio(){
+	Audio.play();
+	}
+</script>
+<a onclick="playAudio()">
+	<img class="center" height="404" src="bgimage.jpg" width="404" >
+</a>
 </body>
 </html>
