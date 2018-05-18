@@ -15,6 +15,7 @@
 <script>
 	var aAudio = new Audio('che_faccio.mp3');
 	var bAudio = new Audio('pt.mp3');
+	var cAudio = new Audio('mostro.mp3');
 	function playAudio(type){
 		if (type == 'a') {
 			aAudio.play();
@@ -22,12 +23,17 @@
 		else if (type == 'b'){
 			bAudio.play();
 		}
+		else if (type == 'c'){
+			cAudio.play();
+		}
 	}
 </script>
 <a onclick="playAudio('a')">
 	<img class="center" height="404" src="bgimage.jpg" width="404" style="left: 50%; top: 50%" ></a>
 <a onclick="playAudio('b')">
 	<img class="center" height="20" src="bgimage2.jpg" width="20" style="left: 95%; top: 95%" ></a>
+<a onclick="playAudio('c')">
+	<img class="center" height="20" src="sam.jpg" width="20" style="left: 5%; top: 95%" ></a>
 
 </body>
 </html>
